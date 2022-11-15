@@ -1,0 +1,107 @@
+li {
+    padding-bottom: 8px;
+}
+#authentication{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#api-key{
+    width: 95%;
+}
+#loading{
+    display:none;
+}
+#submit-api-key, #api-key{
+    margin: 10px;
+
+}
+#main-conatainer {
+    display: none;
+}
+li:hover {
+    background-color: orange;
+    ;
+    color: black
+}
+
+li[data-original-shown="true"]:hover {
+    background-color: greenyellow;
+    color: black
+}
+
+li[data-original-shown="true"] {
+    color: greenyellow;
+
+}
+
+li::marker {
+    color: white;
+}
+
+ol {
+    margin-left: -20px;
+}
+
+#results {
+    padding-top: 2px;
+}
+
+body {
+    background-color: black;
+    padding: 25px 15px;
+    margin: 0 auto;
+    max-width: 500px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#iterations-input {
+    width: 50px;
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: greenyellow;
+
+}
+
+button,#submit {
+    background-color: orange;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover,#submit:hover {
+    background-color: greenyellow;
+
+}
+
+#end {
+    color: orange;
+    cursor: pointer;
+    display: none;
+}
+
+span {
+    line-height: 1.75;
+}
+
+textarea {
+    width: 100%;
+}
+#input-container {
+    width: 100%;
+}

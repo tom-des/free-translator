@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Translator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title"><a href="https://www.youtube.com/watch?v=nOMtFb38cOo" target="_blank">FREE TRANSLATOR</a></h1>
+    <div id="authentication">Provide a Google Translate API key:
+        <input type="text" id="api-key">
+        <button id="submit-api-key">Submit</button>
+    </div>
+    <div id="main-container" style="display: none;">
+        <div id="instructions">
+            <p>Add input text up to 500 characters, then select the desired number of iterations (up to 30). The input
+                text
+                will be translated from one random language to another for the number of iterations specified.
+                <strong>More
+                    iterations and, to a lesser extent, higher word counts require longer runtimes</strong> (about 0.6
+                seconds per iteration).
+            </p>
+        </div>
+        <div id="input-container">
+            <p><strong>Input text</strong> (line breaks will be ignored)</p>
+            <textarea id="text-input" rows="8"
+                maxlength="500">Write in relief and sleep again -- And you can't believe your eyes -- And you can't find your pen -- And the man in the hole -- Is your new friend's friend</textarea>
+            <span>Characters Remaining: </span><span id="character-count"></span>
+            <br />
+            Presets: <select id="predefined">
+                <option value=""></option>
+                <option
+                    value="“Hope” is the thing with feathers - That perches in the soul - And sings the tune without the words - And never stops - at all -">
+                    Hope is the thing with feathers...</option>
+                <option
+                    value="Something there is that doesn't love a wall, -- That sends the frozen-ground-swell under it, -- And spills the upper boulders in the sun; -- And makes gaps even two can pass abreast.">
+                    Something there is that doesn't love a wall...</option>
+                <option
+                    value="April is the cruellest month, breeding Lilacs out of the dead land, mixing Memory and desire, stirring Dull roots with spring rain. ">
+                    April is the cruellest month...</option>
+                <option
+                    value="We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.">
+                    We the People of the United States...</option>
+            </select>
+            <p><strong>Iterations</strong> (max 30)</p>
+            <input id="iterations-input" type="number" max="30" min="1" value="20">
+            <input id="submit" type=button value="Submit" />
+        </div>
+        <div id="results"></div>
+        <div id="output-list"></div>
+        <div id="waiting"></div>
+    </div>
+    
+    <div id="end"><a id="back-to-top">Back to Top</a></div>
+
+</body>
+
+</html>
